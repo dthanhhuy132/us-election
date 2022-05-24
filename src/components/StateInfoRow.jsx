@@ -6,7 +6,7 @@ export default function StateInfoRow({ stateInRow = [] }) {
       {stateInRow.length > 0 ? (
         <div className="flex">
           {stateInRow.map((state, index) => (
-            <StateInfoCol stateName={state} key={index} />
+            <StateInfoCol stateName={state} key={index} index={index} />
           ))}
         </div>
       ) : (

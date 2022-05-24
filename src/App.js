@@ -4,7 +4,7 @@ import Header from './components/Header';
 import PresidentPage from './pages/PresidentPage';
 import StateInfoPage from './pages/StateInfoPage';
 import StateDetailPage from './pages/StateDetailPage';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import { DataContext } from './Provider/DataProvider';
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="container flex mt-[100px]">
+      <div className="container flex mt-[100px] ">
         <Routes>
           <Route path="/" element={<PresidentPage />} />
           <Route path="/president" element={<PresidentPage />} />
