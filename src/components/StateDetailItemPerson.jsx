@@ -10,7 +10,14 @@ export default function StateDetailItemPerson(candidate) {
 
   return (
     <div className={`flex border-2 shadow-md ${bg} p-2 my-2 rounded-md`}>
-      <div className="mr-3 min-w-[200px] font-bold">{candidate?.candidate?.fullName}</div>
+      <div className="mr-4 min-w-[200px] font-bold">
+        {candidate?.candidate?.fullName}{' '}
+        {candidate.candidate.isWinner && (
+          <span className="inline-block mr-2">
+            <i class="fa-solid fa-check"></i>
+          </span>
+        )}
+      </div>
       <div className="flex">
         <p className="mr-4 inline-block min-w-[80px]">
           {candidate?.candidate?.vote.toLocaleString('en-EN')}
