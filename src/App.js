@@ -36,7 +36,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="container flex mt-[100px] ">
+      <div className="md:container mt-[100px] mx-auto text-center">
         <Routes>
           <Route path="/" element={<PresidentPage />} />
           <Route path="/president" element={<PresidentPage />} />

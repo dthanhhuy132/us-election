@@ -21,8 +21,6 @@ export default function StateInfoVoteDetail({
   const [displayPosition, setDisplayPosition] = useState('top-[110%] left-0');
   const [displayIndicatorPostion, setDisplayIndicatorPostion] = useState('top-[-1px] left-[18px]');
 
-  console.log('stateDataFull', stateDataFull);
-
   const voteDetailRef = useRef(null);
   useEffect((e) => {
     const stateInfo = voteDetailRef.current;
